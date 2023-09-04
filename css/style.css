@@ -100,6 +100,62 @@ body, html {
     text-align: center;
 }
 
+/* Tutor CSS Grid container */
+.grid-container {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+/* reponsive grid */
+/* container */
+.padded-boxes {
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+}
+
+/* boxes */
+.padded-boxes > * {
+    width:100%;
+    background:#eee;
+    border-radius:.4rem;
+}
+
+/* headings */
+.padded-boxes .heading {
+    background:#f97171;
+    margin:0;
+    padding:1rem;
+    border-top-left-radius:.4rem;
+    border-top-right-radius:.4rem;
+}
+
+/* padded content */
+.padded-boxes .padded {
+    padding:.1rem 1rem;
+}
+
+/* responsive image */
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .padded-boxes > * {
+        width:calc((100% - 4rem) / 3);
+    }
+}
+  
+
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
